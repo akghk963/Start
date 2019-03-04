@@ -6,8 +6,60 @@ public class 기본 {
 
 	public static void main(String[] args) {
 		
-} 
+	}		
+}
+
+/*					Switch문을 활용한 AND, OR 논리연산
+		Scanner scan = new Scanner(System.in);
+		System.out.print("논리 연산을 입력하세요: ");
+		boolean a = scan.nextBoolean();
+		String  op =scan.next();
+		boolean b = scan.nextBoolean();
+		
+		
+		switch(op) {
+		
+		case "AND":
+			System.out.println(a&&b);
+			break;
+		case "OR":
+			System.out.println(a||b);
+			break;
+			
+		}
+*/		
+		
+			
+
+/*				직사각형 판별하기
+	Scanner scan = new Scanner(System.in);
+	System.out.print("점 (x,y)의 좌표를 입력하세요: ");
+	int x = scan.nextInt();
+	int y = scan.nextInt();
+	String a = "(50,50)";
+	String b = "(100,100)";
+	
+	
+	
+	if(x>=50 && x<=100 && x>=50 && x<=100) {
+		System.out.println("점"+"("+x+","+y+")"+"은 "+a+"과 "+b+"의 사각형 내에 있습니다.");
+	}else {
+		System.out.println("("+x+","+y+")"+"은 사각형 내에 없습니다.");
 	}
+*/
+		
+		
+
+/*			두 정수를 입력받아 합 출력문		
+	Scanner scan = new Scanner(System.in);
+	System.out.print("두 정수를 입력하세요: ");
+	int a = scan.nextInt();
+	int b = scan.nextInt();
+	int c = a+b;
+	
+	System.out.println(a+"+"+b+"은 " + c);
+*/
+
 		
 /** 			SWitch문(사계절);
 		Scanner scan = new Scanner(System.in);
