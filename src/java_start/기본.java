@@ -2,12 +2,81 @@ package java_start;
 
 import java.util.Scanner;
 
-public class 기본 {
+	public class 기본 {
+		public static void main(String[] args) {
 
-	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
 		
-	}		
-}
+		int[] i = new int[10];
+		System.out.print("정수 10개 입력 :");	
+
+		for(int a =0; a<10; a++ ) {
+			i[a] = scan.nextInt();
+		}
+		
+		for(int a =0; a<10; a++) {
+			if(i[a]%3==0)
+				System.out.println(i[a]+" ");
+		}
+		
+		}
+	}
+	
+/*				Switch문으로 학점구하기			
+		Scanner scan = new Scanner(System.in);
+		System.out.print("학점을 입력하세요(A~F): ");
+		String i = scan.next();
+		
+		switch(i) {
+		
+		case "A": case "B":
+			System.out.println("Excellent");
+		break;
+		
+		case "C": case "D":
+			System.out.println("good");
+		break;
+		
+		case "F":
+			System.out.println("Bye"); 
+		break;
+		
+		default:
+			System.out.println("잘못입력");
+		 }
+*/		 			
+			
+/*			돈의 액수 입력받아 몇 개로 변환되는 출력
+		Scanner scan = new Scanner(System.in);
+		int money;
+		int number;
+		System.out.print("돈의 액수를 입력하세요>>");
+		money = scan.nextInt();
+		
+		number = money/50000;
+		System.out.print("오마원" + number + "개,");
+		money %= 50000;
+		
+		number = money/10000;
+		System.out.print("만원" + number + "개,");
+		money %= 10000;
+		
+		number = money/1000;
+		System.out.print("천원" + number + "개,");
+		money %= 1000;
+		
+		number = money/100;
+		System.out.print("100원" + number + "개,");
+		money %= 100;
+		
+		number = money/10;
+		System.out.print("10원" + number + "개,");
+		money %= 10;
+		
+		number = money/1;
+		System.out.print("1원" + number + "개,");
+		money %= 1;
+*/		
 
 /*					Switch문을 활용한 AND, OR 논리연산
 		Scanner scan = new Scanner(System.in);
